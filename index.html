@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Etch-A-Sketch</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Etch-A-Sketch</h1>
+
+        <div class="controls">
+            <label for="sizeRange">Grid Size:</label>
+            <input type="range" id="sizeRange" min="4" max="64" value="16" />
+            <span id="sizeLabel">16 x 16</span>
+
+            <input type="color" id="colorPicker" value="#ff0000" />
+            <button id="clearBtn">Clear</button>
+
+            <label>
+                <input type="checkbox" id="toggleDrag" checked />
+                Click & Drag to Draw
+            </label>
+        </div>
+
+        <div id="grid"></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
